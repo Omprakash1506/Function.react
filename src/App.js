@@ -1,25 +1,86 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default function App() {
+   const Product = [
 
-export default App;
+    {
+        "id":1,
+        "name":"Akshit",
+        "city":"Moradabad"
+    },
+    
+    {
+        "id":2,
+        "name":"Nikita",
+        "city":"Lucknow"
+    },
+    
+    {
+        "id":3,
+        "name":"Deeksha",
+        "city":"Noida"
+    },
+    
+    {
+        "id":4,
+        "name":"Ritesh",
+        "city":"Delhi"
+    },
+    
+    {
+        "id":5,
+        "name":"Somya",
+        "city":"Gurugram"
+    },
+    
+    {
+        "id":6,
+        "name":"Eshika",
+        "city":"Mumbai"
+    },
+    {
+        "id":7,
+        "name":"Kalpana",
+        "city":"Rampur"
+    },
+    
+    {
+        "id":8,
+        "name":"Parul",
+        "city":"Chandigarh"
+    },
+    
+    {
+        "id":9,
+        "name":"Himani",
+        "city":"Dehradun"
+    }
+] 
+
+
+  return (
+   <>
+
+        <div className='Product'>{
+        
+            Product.map((e)=> {
+                return(
+                    <p>{e.city}</p>
+                )
+})
+        }
+        
+
+</div>
+    </>
+      );
+    }
+    
+   
+  
+  
+        
+  
+
+
